@@ -8,12 +8,30 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
-  <meta name="description" content="">
+  <title>Portal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <link rel="stylesheet" href="">
+  <script src="https://kit.fontawesome.com/de33348239.js" crossorigin="anonymous"></script>
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SSAFY 5th 대전1반 포트폴리오 포탈">
+  <meta property="og:url" content="https://good5229.github.io/my_portfolio/">
+  <meta property="og:description" content="대전1반 웹 포트폴리오 포탈입니다.">
+  <meta property="og:image:width" content="800" />
+  <meta property="og:image:height" content="400" />
+  <meta property="og:image" content="images/portfolio/thumbnail.jpg">
+  <style>
+    #section {
+      background-image: url('images/portfolio/background.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    #social>a {
+      color: white;
+    }
+  </style>
 </head>
 
 <body>
@@ -22,46 +40,71 @@
     <![endif]-->
 
 
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="d-flex justify-content-between">
-        <div>
-          <a class="navbar-brand" href="#">SSAFY 5th Daejeon 1st</a>
-        </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="introduce.html">Introduce</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="review.html">Review</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="others.html" tabindex="-1" aria-disabled="true">Other portfolio</a>
-            </li>
-          </ul>
-        </div>
+  <!-- navbar -->
+  <nav class="px-3 navbar navbar-expand-lg navbar-light bg-light">
+    <div class="d-flex justify-content-between">
+      <div>
+        <a class="navbar-brand" href="index.html">SSAFY 5th Daejeon 1st</a>
       </div>
-    </nav>
-
-    <!-- portfolio introduce -->
-    <div class="h1 my-5">
-      SSAFY 5기 대전 1반 스터디원들의 포트폴리오를 확인해보세요!
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="introduce.html">Introduce</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="others.html" tabindex="-1" aria-disabled="true">Other portfolio</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <footer class="sticky-bottom py-1 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">
-          Created by Bellhundred
-        </p>
+  </nav>
+
+  <!-- portfolio introduce -->
+  <header>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/portfolio/background.jpg" class="d-block w-100" alt="...">
+        </div>
+
       </div>
-    </footer>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+    </div>
+  </header>
+
+
+  <footer class="sticky-bottom py-1 bg-dark">
+    <div class="row">
+      <span class="m-0 text-center text-white">
+        Created by Bellhundred
+      </span>
+      <span id="social" class="d-flex justify-content-end">
+        <a class="mx-3" href="https://blog.naver.com/good5229" target="_blank">
+          <i class="fas fa-blog"></i>
+        </a>
+        <a class="mx-3" href="https://www.instagram.com/bellhundred/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a class="mx-3" href="https://www.facebook.com/jongbaek.kim.35/" target="_blank">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </span>
+    </div>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
